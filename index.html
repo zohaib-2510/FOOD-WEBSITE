@@ -52,7 +52,7 @@ font-family: 'Roboto', sans-serif;
   height: 100%;
 }
 .right{
-  width: 50%;
+  width: 47%;
 height: 100%;
 
 }
@@ -89,7 +89,7 @@ transition: all ease-in-out 1.4s;
   padding-top: 10px;
 }
 img{
-  height: 90%;
+  height: 80%;
 }
 
 
@@ -180,7 +180,66 @@ height: 50%;
     padding: 3.5% 7% 3.5% 7%;
   }
 }
+*::selection{
+  background-color:#ff702a;
+  color: white;
+}
 
+
+
+
+
+img {
+      
+            object-fit: cover;
+            animation: float 3s ease-out infinite;
+        }
+        @keyframes float {
+            50% {
+            transform: translate(0, 60px);
+            }
+        }
+        .shadow {
+            position: absolute;
+            height:20px;
+            top: 80%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+            filter: blur(3px);
+            animation: shrink 3s ease-out infinite;
+        }
+        @keyframes shrink {
+            0% {
+            width: 50%;
+            }
+            50% {
+            width: 30%;
+            }
+            100% {
+            width: 50%;
+            }
+        } 
+        @media(max-width:600px){
+            img{
+                width:300px;
+            }
+        }
+
+
+
+        #play{
+    padding: 3vw 1.6vw;
+    background-color: black;
+    color: #fff;
+    border-radius: 500%;
+    font-size: 2vw;
+    font-weight: 890;
+    position: fixed;
+}
+
+    </style>
 </style>
 </head>
 <body>
@@ -226,18 +285,21 @@ height: 50%;
 
 
       <div class="page1">
+        
         <div class="left">
+        
           <h1 id="h1">FOOD WEBSITE</h1><br>
-          <h3 id="mu">Foods The <br>Most Precious Thing .</h3><br>
+          <h3 id="mu">Foods The <br><span class="auto-type"></span></h3><br>
           <button id="btn1" type="button" onclick="location.reload()">Order Now</button>
         </div>
         <div class="right">
-              <img src="/home (1).png" alt="">
+              <img id="img" src="/home (1).png" alt="">
         </div>
       </div>
-    
-      
-    <script src="app.js"></script>
+      <script src="app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js" integrity="sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
