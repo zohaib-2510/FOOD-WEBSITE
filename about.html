@@ -20,6 +20,9 @@ body{
     height: 100vh;
     background-color: #1e1c2a;
     width: 100%;
+    font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 #main-nav-logo{
     color: #ff702a;
@@ -118,6 +121,7 @@ padding-top: 90px;
       width: 100%;
       font-size: 40px;
     }
+
     
       #btn1{
   border: none;
@@ -135,12 +139,18 @@ transition: all ease-in-out 1.4s;
     width: 100%;
     height: 100vh;
     }
-
+#imgg{
+    width: 70%;
+height: 80%;
+}
+#about-h1{
+    width: 100%;
+}
   }
   @media (max-width:550px) {
-    #h1{
-      font-size: 42px;
-    }
+#about-h1{
+font-size: 90vh;
+}
   }
 
 
@@ -241,7 +251,7 @@ img {
     position: fixed;
 z-index: 9;
   }
-
+ 
     </style>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
@@ -265,10 +275,10 @@ z-index: 9;
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a id="navlink1" class="nav-link active" href="#">Home</a>
+                <a id="navlink" class="nav-link active" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a id="navlink" class="nav-link active" href="./about.html">About</a>
+                <a id="navlink1" class="nav-link active" href="./about.html">About</a>
               </li>
               <li class="nav-item">
                 <a id="navlink" class="nav-link active" href="#">Menu</a>
@@ -287,24 +297,27 @@ z-index: 9;
 
 
 
-      <div class="page1">
       
 
-        <div class="left">
-        <div id="play">
-          <img src="./[CITYPNG.COM]Cartoon Illustration Veggie Burger HD PNG - 1500x1500.png" width="100px" height="100px" alt="">
-        </div>
-
-          <h1 id="h1">FOOD WEBSITE</h1><br>
-          <h3 id="mu">Foods The <br><span class="auto-type"></span></h3><br>
-          <button id="btn1" type="button" onclick="location.reload()">Order Now</button>
-        </div>
-        <div class="right">
-              <img id="img" src="/home (1).png" alt="">
-        </div>
-      </div>
-  
-
+      
+      
+      
+      
+      
+      
+      <div class="page1">
+    <div id="play">
+      <img src="./[CITYPNG.COM]Cartoon Illustration Veggie Burger HD PNG - 1500x1500.png" width="100px" height="100px" alt="">
+    </div>
+  <div style="display: flex; justify-content: center;" class="right">
+<img id="imgg" src="./about.png" alt="">
+  </div>
+  <div class="left">
+<h1 style="font-size: 50px" id="about-h1">About <span style=" border-radius: 50px;border-bottom: 6.5px solid  #FFC736;" id="h">Us</span></h1><br>
+<h2 style="font-size: 35px; color: #FFC736;" id="about-h2">We Speak<br> The Good Food Language .</h2>
+<p style="color: #fff; font-size: 20px;" id="about-p"><span class="auto-type-about"></span></p>
+</div>
+</div>
 
 
 
@@ -319,6 +332,7 @@ z-index: 9;
 
 
  
+<script src="about.js"></script>
  <script>
   
     var a = document.getElementById("h1")
@@ -345,7 +359,6 @@ gsap.from("a",{
 
 
  </script>
-      <script src="app.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 
