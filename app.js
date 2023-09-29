@@ -34,32 +34,6 @@ function myFunction(){
 myFunction()
 
 
-function myOrg(){
-    var a = document.getElementById("h1")
-var b = document.getElementById("mu")
-
-gsap.from(".h1",{
-    y:-300,
-    opacity:0,
-    delay:0.5,
-    duration:0.9,
-    stagger:0.2
-    
-    }) 
-    
-    gsap.from("h3",{
-        x:-300
-        
-        }) 
-
-
-}
-
-
-
-
-
-myOrg()
 
 
 
